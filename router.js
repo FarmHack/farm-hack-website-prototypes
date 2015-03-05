@@ -6,7 +6,14 @@ $(function(){
       routes:{
         '': 'hacksRoute',
         'hacks': 'hacksRoute',
-        'meet-ups': 'meetUpsRoute'
+        'meet-ups': 'meetUpsRoute',
+        'tool/:toolId': 'tool'
+      },
+
+      tool: function(toolId) {
+        var tpl = _.template(jQuery('#template-tool-42').html())
+        $('#main-region').html(tpl())
+
       },
 
       hacksRoute: function() {
@@ -35,4 +42,4 @@ $(function(){
       }
   }))
 
-})
+})($)

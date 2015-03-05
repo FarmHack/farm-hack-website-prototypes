@@ -31,8 +31,26 @@ body {
   margin: 15px 15px 0 15px;
 }
 
+#main-region {
+
+}
+
+nav {
+  margin-left: 130px;
+}
+
+nav h1 {
+    float: left;
+    margin: 5px 0 0 0;
+    font-size: 30px;
+}
+
 .wrapper-right {
   margin: 0 0 0 160px;
+}
+
+.tool {
+  margin-top: 150px;
 }
 
 .section-description {
